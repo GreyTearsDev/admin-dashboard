@@ -23,12 +23,8 @@ header {
 }
 
 aside {
-  background-color: #b0b0af;
+  background-color: #56a4e0;
   grid-row: 1 / 3;
-}
-
-aside > p {
-  color: #fff;
 }
 
 main {
