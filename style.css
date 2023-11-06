@@ -8,10 +8,10 @@
 
 :root {
   --white: #fff;
-  --main-color: #dedede;
-  --secondary-color: #ba0006;
-  --secondary-accent-color: #5c6b82;
-  --accent-color: #5c6b82;
+  --main-color: #f29b30;
+  --secondary-color: #91d9d9;
+  --secondary-accent-color: #f2b84b;
+  --accent-color: #897b60;
   --highlight-color: #424242;
   font-family: Mulish, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -27,7 +27,7 @@
 aside {
   background-color: var(--secondary-color);
   grid-row: 1 / 3;
-  color: var(--main-color);
+  color: var(--white);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr 12fr;
@@ -37,13 +37,16 @@ aside {
 
 .in-grid > svg {
   width: 1.3rem;
-  fill: var(--main-color);
+  fill: var(--white);
   justify-self: center;
+}
+.in-grid:hover > svg {
+  fill: var(--secondary-color);
 }
 
 .logo > svg {
   width: 1.8rem;
-  fill: var(--main-color);
+  fill: var(--white);
 }
 
 .logo > p {
@@ -77,13 +80,15 @@ aside {
 
 .upper-nav .in-grid:hover,
 .lower-nav .in-grid:hover {
-  background-color: var(--accent-color);
+  background-color: var(--white);
+  color: var(--secondary-color);
   cursor: pointer;
   position: relative;
   font-size: larger;
   border-radius: 20px;
   padding-left: 10px;
   align-items: center;
+  font-weight: bold;
 }
 
 /*===============SIDEBAR END=================*/
@@ -96,7 +101,7 @@ header {
   display: grid;
   grid-template-columns: 1.75fr 1fr;
   grid-template-rows: 1fr 1fr;
-  color: var(--secondary-color);
+  color: var(--white);
   padding: 0 4vw 15px;
 }
 
@@ -115,7 +120,6 @@ input[type="search"] {
 input[type="search"]:focus {
   background-color: var(--white);
   outline: none;
-  border: 1px solid var(--accent-color);
   color: var(--highlight-color);
 }
 
@@ -125,7 +129,7 @@ input[type="search"]:focus {
 
 header svg {
   width: 1.8rem;
-  fill: var(--secondary-color);
+  fill: var(--white);
 }
 
 .search-bar-container {
@@ -146,7 +150,7 @@ header img {
 }
 
 #bell-icon > svg:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--white);
   fill: var(--main-color);
   border-radius: 50%;
   padding: 5px;
@@ -156,7 +160,7 @@ header img {
 .user-info-container {
   display: flex;
   gap: 1em;
-  color: var(--secondary-color);
+  color: var(--white);
   font-weight: bold;
   font-size: 1.4rem;
   align-items: center;
@@ -184,7 +188,7 @@ header img {
 
 button {
   background-color: var(--secondary-color);
-  color: var(--main-color);
+  color: var(--white);
   border: none;
   width: 100px;
   padding: 10px 17px;
@@ -193,7 +197,14 @@ button {
 
 button:hover {
   cursor: pointer;
-  background-color: var(--accent-color);
+  background-color: #f8f8f8;
+  color: var(--secondary-color);
+}
+
+button:active {
+  cursor: pointer;
+  background-color: #f5f5f5;
+  box-shadow: inset 0.5px 0.5px 2px var(--highlight-color);
 }
 /*===============HEADER END=================*/
 
@@ -219,7 +230,7 @@ main svg {
 }
 
 .project {
-  background-color: var(--main-color);
+  background-color: var(--white);
   padding: 1rem;
   border-radius: 10px;
   display: grid;
@@ -245,7 +256,7 @@ main svg {
 
 .project svg:hover {
   background-color: var(--secondary-color);
-  fill: var(--main-color);
+  fill: var(--white);
   padding: 5px;
   border-radius: 50%;
   cursor: pointer;
@@ -253,13 +264,20 @@ main svg {
 
 a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--white);
   cursor: pointer;
 }
 
 a:hover {
-  color: var(--accent-color);
-  text-shadow: 2px 2px 5px var (--secondary-accent-color);
+  color: var(--highlight-color);
+}
+
+.project a {
+  color: var(--highlight-color);
+}
+
+.project a:hover {
+  color: var(--secondary-accent-color);
 }
 
 /*===============MAIN END=================*/
