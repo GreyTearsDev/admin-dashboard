@@ -64,6 +64,10 @@ aside {
   align-items: center;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .upper-nav,
 .lower-nav {
   display: grid;
@@ -74,6 +78,12 @@ aside {
 .upper-nav .in-grid:hover,
 .lower-nav .in-grid:hover {
   background-color: var(--accent-color);
+  cursor: pointer;
+  position: relative;
+  font-size: larger;
+  border-radius: 20px;
+  padding-left: 10px;
+  align-items: center;
 }
 
 /*===============SIDEBAR END=================*/
@@ -138,6 +148,7 @@ header img {
   fill: var(--main-color);
   border-radius: 50%;
   padding: 5px;
+  cursor: pointer;
 }
 
 .user-info-container {
@@ -177,6 +188,11 @@ button {
   padding: 10px 17px;
   border-radius: 20px;
 }
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--accent-color);
+}
 /*===============HEADER END=================*/
 
 /*===============MAIN START=================*/
@@ -207,6 +223,7 @@ main svg {
   display: grid;
   grid-template-rows: 1fr minmax(10%, 5%);
   border-left: 10px solid var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .project .icons {
@@ -229,6 +246,18 @@ main svg {
   fill: var(--main-color);
   padding: 5px;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-shadow: 2px 2px 5px var (--secondary-accent-color);
 }
 
 /*===============MAIN END=================*/
