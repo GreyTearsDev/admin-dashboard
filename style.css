@@ -8,11 +8,11 @@
 
 :root {
   --white: #fff;
-  --main-color: #eaedf3;
-  --secondary-color: #302d43;
-  --secondary-accent-color: #282639;
-  --accent-color: #65d177;
-  --highlight-color: #f58f23;
+  --main-color: #dedede;
+  --secondary-color: #ba0006;
+  --secondary-accent-color: #5c6b82;
+  --accent-color: #5c6b82;
+  --highlight-color: #424242;
   font-family: Mulish, Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -222,8 +222,8 @@ main svg {
   border-radius: 10px;
   display: grid;
   grid-template-rows: 1fr minmax(10%, 5%);
-  border-left: 10px solid var(--accent-color);
-  color: var(--secondary-color);
+  border-left: 10px solid var(--secondary-color);
+  color: var(--highlight-color);
 }
 
 .project .icons {
