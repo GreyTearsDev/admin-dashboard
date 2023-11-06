@@ -125,7 +125,7 @@ header img {
 }
 
 #large > img {
-  max-width: 70px;
+  max-width: 60px;
 }
 
 .user-info-container {
@@ -157,6 +157,10 @@ header img {
   gap: 2vw;
 }
 
+#bell-icon {
+  border: 1px solid blue;
+}
+
 button {
   background-color: var(--secondary-color);
   color: var(--main-color);
@@ -170,5 +174,27 @@ button {
 /*===============MAIN START=================*/
 main {
   background-color: var(--secondary-accent-color);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr minmax(20%, 30%);
+}
+
+main svg {
+  width: 1.8rem;
+  fill: var(--secondary-color);
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 1.5em;
+  padding: 3vh;
+}
+
+.project {
+  background-color: var(--main-color);
+  padding: 1vh 2vw;
+  border-radius: 10px;
 }
 /*===============MAIN END=================*/
