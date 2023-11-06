@@ -153,6 +153,22 @@ header img {
   gap: 1em;
 }
 
+.buttons-container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: none;
+  width: 120px;
+  padding: 12px 20px;
+  border-radius: 20px;
+}
 /*===============HEADER END=================*/
 
 /*===============MAIN START=================*/
