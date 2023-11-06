@@ -79,16 +79,21 @@ header {
   background-color: var(--main-color);
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   color: var(--secondary-color);
+  padding: 10px 2vw;
+}
+
+header div {
+  border: 1px solid green;
 }
 
 input[type="search"] {
   appearance: none;
   background-color: blue;
   border: none;
-  width: 100%;
+  min-width: 80%;
   height: 30px;
   border-radius: 20px;
 }
@@ -107,12 +112,22 @@ input[type="search"] {
   display: grid;
   grid-template-columns: 20px 1fr;
   align-items: center;
-  gap: 10px;
+  gap: 1em;
 }
 
 header img {
   max-width: 40px;
   height: auto;
+  border-radius: 50%;
+}
+
+#large > img {
+  max-width: 80px;
+}
+
+.user-info-container {
+  display: flex;
+  gap: 1em;
 }
 
 /*===============HEADER END=================*/
