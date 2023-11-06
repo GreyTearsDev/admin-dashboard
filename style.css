@@ -157,10 +157,6 @@ header img {
   gap: 2vw;
 }
 
-#bell-icon {
-  border: 1px solid blue;
-}
-
 button {
   background-color: var(--secondary-color);
   color: var(--main-color);
