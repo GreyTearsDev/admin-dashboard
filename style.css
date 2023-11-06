@@ -71,6 +71,11 @@ aside {
   align-items: center;
 }
 
+.upper-nav .in-grid:hover,
+.lower-nav .in-grid:hover {
+  background-color: var(--accent-color);
+}
+
 /*===============SIDEBAR END=================*/
 
 /*===============HEADER START=================*/
@@ -128,6 +133,13 @@ header img {
   max-width: 60px;
 }
 
+#bell-icon > svg:hover {
+  background-color: var(--secondary-color);
+  fill: var(--main-color);
+  border-radius: 50%;
+  padding: 5px;
+}
+
 .user-info-container {
   display: flex;
   gap: 1em;
@@ -173,7 +185,7 @@ main {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr minmax(20%, 30%);
+  grid-template-columns: 1fr minmax(20%, 25%);
 }
 
 main svg {
@@ -185,12 +197,12 @@ main svg {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 200px;
   gap: 1.5em;
-  padding: 3vh;
+  padding: 6vh;
 }
 
 .project {
   background-color: var(--main-color);
-  padding: 2vh;
+  padding: 1rem;
   border-radius: 10px;
   display: grid;
   grid-template-rows: 1fr minmax(10%, 5%);
@@ -201,7 +213,7 @@ main svg {
   justify-self: end;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 2vh;
 }
 
 .proj-title {
@@ -210,6 +222,13 @@ main svg {
 }
 
 .project .text {
+}
+
+.project svg:hover {
+  background-color: var(--secondary-color);
+  fill: var(--main-color);
+  padding: 5px;
+  border-radius: 50%;
 }
 
 /*===============MAIN END=================*/
