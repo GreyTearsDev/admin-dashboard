@@ -111,7 +111,7 @@ input[type="search"]:focus {
   border: 1px solid black;
 }
 
-.search-bar-container > svg {
+header svg {
   width: 1.8rem;
   fill: var(--secondary-color);
 }
@@ -148,6 +148,9 @@ header img {
 
 .icons-container {
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 /*===============HEADER END=================*/
