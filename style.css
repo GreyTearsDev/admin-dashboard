@@ -64,11 +64,17 @@ aside {
 }
 
 .logo {
+  display: grid;
+  grid-template-columns: 1.8rem 1fr;
+  gap: 5%;
+  padding: 0.3em;
+  margin: 5%;
   align-items: center;
 }
 
 .logo:hover {
   cursor: pointer;
+  color: var(--white);
 }
 
 .upper-nav,
@@ -84,7 +90,7 @@ aside {
   color: var(--secondary-color);
   cursor: pointer;
   position: relative;
-  font-size: larger;
+  font-size: large;
   border-radius: 20px;
   padding-left: 10px;
   align-items: center;
@@ -268,22 +274,23 @@ a {
   cursor: pointer;
 }
 
-a:hover {
-  color: var(--highlight-color);
+.project:hover {
+  box-shadow: 8px 8px 5px #2020202e;
+  cursor: pointer;
 }
 
 .project a {
-  color: var(--highlight-color);
+  color: var(--secondary-color);
 }
 
-.project a:hover {
+.project:hover a {
   color: var(--secondary-accent-color);
 }
 
 .announce-trends {
-  border: 1px solid white;
   display: grid;
   grid-template-rows: repeat(2fr);
+  position: relative;
 }
 
 .trending img {
@@ -295,12 +302,14 @@ a:hover {
 .announcements,
 .trending {
   display: grid;
-  grid-template-rows: repeat(auto-fit, 90px);
+  grid-template-rows: repeat(auto-fill, 90px);
+  grid-auto-rows: minmax(90px, auto);
   background-color: var(--white);
-  padding: 3vh;
+  padding: 5vh 3vh 3vh 3vh;
   font-size: 0.8rem;
   align-items: center;
-  color: var(--highlight-color);
+  color: var(--secondary-color);
+  overflow: scroll;
 }
 
 .title {
@@ -308,9 +317,14 @@ a:hover {
   font-size: 1.2em;
 }
 
-.announcements > div:hover {
+.announcements > div:hover,
+.user a:hover {
   cursor: pointer;
   color: var(--secondary-accent-color);
+}
+
+.announce-trends img:hover {
+  border: 2px solid var(--secondary-accent-color);
 }
 
 .user {
@@ -318,6 +332,32 @@ a:hover {
   grid-template-columns: 30% 1fr;
   align-items: center;
   gap: 2%;
+  color: var(--secondary-color);
+}
+
+.user a {
+  color: var(--secondary-color);
+}
+
+.user span {
+  font-weight: 700;
+}
+
+.ann-title,
+.tren-title {
+  position: absolute;
+  top: 2vh;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.tren-title {
+  left: 3vh;
+}
+
+.trending {
+  border-top: 2px solid lightgrey;
+  position: relative;
 }
 
 /*===============MAIN END=================*/
