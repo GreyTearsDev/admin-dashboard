@@ -79,7 +79,7 @@ header {
   background-color: var(--main-color);
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.75fr 1fr;
   grid-template-rows: 1fr 1fr;
   color: var(--secondary-color);
   padding: 10px 2vw;
@@ -91,11 +91,19 @@ header div {
 
 input[type="search"] {
   appearance: none;
-  background-color: blue;
+  background-color: var(--secondary-color);
   border: none;
-  min-width: 80%;
+  min-width: 90%;
   height: 30px;
   border-radius: 20px;
+  color: var(--main-color);
+  padding: 0.7em;
+}
+
+input[type="search"]:focus {
+  background-color: var(--secondary-accent-color);
+  outline: none;
+  border: 2px solid var(--accent-color);
 }
 
 .bar-container {
@@ -122,12 +130,24 @@ header img {
 }
 
 #large > img {
-  max-width: 80px;
+  max-width: 70px;
 }
 
 .user-info-container {
   display: flex;
   gap: 1em;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+.user-info-container span {
+  font-size: 0.8rem;
+}
+
+.icons-container {
+  font-weight: bold;
 }
 
 /*===============HEADER END=================*/
